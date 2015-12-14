@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+var Client = require('../lib/client');
+
+console.log(Client.Constants);
+
+Client.open();
+Client._request(Buffer('Hello World'), function(err, res) {
+  if (err) console.lof(err);
+  console.log(res.toString('utf8'));
+
+  Client.close();
+});
+
+console.log("I'm synchronous.");

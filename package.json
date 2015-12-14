@@ -1,0 +1,16 @@
+{
+  "name": "rtnetlinkd",
+  "version": "0.1.0",
+  "description": "An HTTP API for interfacing with the Linux iproute2 management facilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "author": "John Manero <john.manero@gmail.com>",
+  "license": "MIT",
+  "gypfile": true,
+  "dependencies": {
+    "nan": "^2.1.0"
+  }
+}
